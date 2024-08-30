@@ -4,9 +4,9 @@ const chalk = require("chalk");
 const figlet = require("figlet");
 
 program
-  .name("zyfcli")
-  .usage(`zyfcli <command> [option]`)
-  .version(`zyfcli ${require("../package.json").version}`);
+  .name("dipper-cli")
+  .usage(`dipper-cli <command> [option]`)
+  .version(`dipper-cli ${require("../package.json").version}`);
 
 
 program
@@ -31,11 +31,10 @@ program
 program.on("--help", function () {
   console.log(
     "\r\n" +
-    figlet.textSync("zyf-cli", {
+    figlet.textSync("dipper-cli", {
       font: "3D-ASCII",
       horizontalLayout: "default",
       verticalLayout: "default",
-      width: 80,
       whitespaceBreak: true,
     })
   );
@@ -43,7 +42,7 @@ program.on("--help", function () {
   console.log();
   console.log(
     `Run ${chalk.cyan(
-      "zyfcli <command> --help"
+      "dipper-cli <command> --help"
     )} for detailed usage of given command.`
   );
   console.log();
