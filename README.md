@@ -7,6 +7,7 @@
 1. react   模版
 2. nestjs  模版
 3. micro   微前端模版
+4. next-pc SSR模版
 
 # 二、邀请开发者
 如果您也想做一名开源开发者，请联系我，微信号: `zyfts1`, 麻烦备注下 `北斗cli` 谢谢。
@@ -16,7 +17,7 @@
 2. 内置react-admin模版
 3. 内置react-mobile模版
 4. 内置micro-cli微前端模版
-4. 内置next-mobile模版
+4. 内置next-pc, next-mobile模版
 5. 内置egg模版
 6. 开发开源的组件库，并在模版中应用
 ...
@@ -32,7 +33,7 @@ create创建项目时会让你选择使用哪个模版。
 
 更多的使用方式后续会在[`csdn博客`](https://blog.csdn.net/u012570307/article/details/137786725) 中展示。
 
-
 # 发布到npm
-1. npm login
-2. npm publish
+- 登录前需要切换npm:  npm config set registry https://registry.npmjs.org
+- npm login
+- npm publish
